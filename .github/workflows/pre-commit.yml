@@ -1,0 +1,23 @@
+name: Pre-Commit
+
+on:
+  pull_request:
+    branches:
+      - "main"
+  push:
+    branches:
+      - "*"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  SKIP: ${{ vars.SKIP }}
+
+permissions:
+  contents: read
+
+jobs:
+  precommit:
+    uses: esacteksab/.github/.github/workflows/pre-commit.yml@3581efcc1dd5dbb0a8ae0e6c4a03794152cd59f5

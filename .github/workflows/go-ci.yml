@@ -1,0 +1,27 @@
+name: Go - Audit
+
+on:
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - "**.go"
+      - "**.mod"
+      - "**.sum"
+  push:
+    branches: ["*"]
+    paths:
+      - "**.go"
+      - "**.mod"
+      - "**.sum"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    uses: esacteksab/.github/.github/workflows/go-ci.yml@3581efcc1dd5dbb0a8ae0e6c4a03794152cd59f5

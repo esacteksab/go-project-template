@@ -1,0 +1,22 @@
+name: Tools - Check
+
+on:
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - "**.go"
+      - "**.mod"
+      - "**.sum"
+      - ".goreleaser.yaml"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  goreleaser-check:
+    uses: esacteksab/.github/.github/workflows/tools.yml@3581efcc1dd5dbb0a8ae0e6c4a03794152cd59f5

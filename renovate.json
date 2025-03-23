@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", "helpers:pinGitHubActionDigests"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["python"],
+      "allowedVersions": "<3.13"
+    }
+  ],
+  "labels": ["dependencies"],
+  "dependencyDashboard": true,
+  "separateMinorPatch": true,
+  "separateMultipleMajor": true,
+  "separateMultipleMinor": true
+}
