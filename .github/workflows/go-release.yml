@@ -15,5 +15,5 @@ permissions:
   attestations: write
 
 jobs:
-  goreleaser:
+  goreleaser-reusable:
     uses: esacteksab/.github/.github/workflows/go-release.yml@3581efcc1dd5dbb0a8ae0e6c4a03794152cd59f5
