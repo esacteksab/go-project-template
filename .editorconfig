@@ -27,7 +27,7 @@ max_line_length = 160
 # https://github.com/editorconfig/editorconfig-core-go/blob/master/.editorconfig
 [*.md]
 trim_trailing_whitespace = false
-indent_size = 4
+indent_size = 2
 indent_style = space
 
 # Override for Makefile
