@@ -220,13 +220,11 @@ terraform.rc
 #################
 # VSCode Things #
 #################
-# keep-sorted start
+# We can't keep-sort this as the ordering matters
 
+# sometimes there is other stuff in here
+.vscode/*
 # But this file could be helpful to others
 !.vscode/settings.json
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
-# sometimes there is other stuff in here
-.vscode/*
-
-# keep-sorted end
