@@ -13,15 +13,21 @@
         "goTemplateBracketSpacing": true,
         "bracketSameLine": true,
         "embeddedLanguageFormatting": "off",
-        "htmlWhitespaceSensitivity": "strict",
-        "tabWidth": 2
+        "htmlWhitespaceSensitivity": "strict"
+      }
+    },
+    {
+      "files": ["*.md"],
+      "options": {
+        "embeddedLanguageFormatting": "off"
       }
     },
     {
       "files": ["*.toml"],
       "options": {
         "indentTables": true,
-        "indentEntries": true
+        "indentEntries": true,
+        "alignEntries": true
       }
     }
   ]
