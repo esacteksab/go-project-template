@@ -16,6 +16,13 @@
         "htmlWhitespaceSensitivity": "strict",
         "tabWidth": 2
       }
+    },
+    {
+      "files": ["*.toml"],
+      "options": {
+        "indentTables": true,
+        "indentEntries": true
+      }
     }
   ]
 }
