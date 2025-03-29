@@ -19,7 +19,6 @@ In no particular order, what exists here is defined below.
 - [Mdformat](https://mdformat.readthedocs.io/en/stable/)
 - [pre-commit](https://pre-commit.com/)
 - [Prettier](https://prettier.io/)
-- [Renovate](https://www.mend.io/renovate/)
 - [shellcheck-py](https://github.com/shellcheck-py/shellcheck-py)
 - [typos](https://github.com/crate-ci/typos/)
 

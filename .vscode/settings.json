@@ -20,10 +20,6 @@
             "url": "https://json.schemastore.org/prettierrc.json"
         },
         {
-            "fileMatch": ["renovate.json"],
-            "url": "https://docs.renovatebot.com/renovate-schema.json"
-        },
-        {
             "fileMatch": ["theme.toml"],
             "url": "https://json.schemastore.org/hugo-theme.json"
         },
