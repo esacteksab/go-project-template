@@ -59,6 +59,13 @@
     {
       "fileMatch": [".github/workflows/*.yml"],
       "url": "https://json.schemastore.org/github-action.json"
+    },
+    {
+      "fileMatch": [".golangci.yaml"],
+      "url": "https://golangci-lint.run/jsonschema/golangci.v1.jsonschema.json"
     }
-  ]
+  ],
+  "yaml.schemas": {
+    "https://golangci-lint.run/jsonschema/golangci.v1.jsonschema.json": ".golangci.yaml"
+  }
 }

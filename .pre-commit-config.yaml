@@ -22,7 +22,7 @@ repos:
       - id: keep-sorted
 
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.31.3
+    rev: 0.32.1
     hooks:
       - id: check-github-workflows
       - id: check-dependabot
@@ -54,7 +54,7 @@ repos:
         args:
           [
             "--schemafile",
-            "https://golangci-lint.run/jsonschema/golangci.jsonschema.json",
+            "https://golangci-lint.run/jsonschema/golangci.v1.jsonschema.json",
           ]
       - id: check-jsonschema
         name: "Validate goreleaser config"
@@ -109,7 +109,7 @@ repos:
           - mdformat-footnote
 
   - repo: https://github.com/crate-ci/typos
-    rev: v1.30.2
+    rev: v1.31.1
     hooks:
       - id: typos
         args: [--force-exclude]
