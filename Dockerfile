@@ -1,5 +1,5 @@
 # This may be useful for running tests in a container
-FROM golang:1.24.1-bookworm AS builder
+FROM golang:1.24.2-bookworm AS builder
 
 RUN apt update && apt install -y unzip wget git
 
