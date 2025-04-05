@@ -48,6 +48,10 @@ max_line_length = 80
 indent_style = space
 indent_size = 4
 
+[*.{tf,tofu}]
+indent_size = 2
+indent_style = space
+
 [*.toml]
 indent_size = 2
 indent_style = space
