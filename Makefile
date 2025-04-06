@@ -36,3 +36,8 @@ tidy:
 .PHONY: test
 test: tidy
 	go test ./... -cover
+
+.PHONY: update
+update:
+	go get -u ./...
+	go mod tidy

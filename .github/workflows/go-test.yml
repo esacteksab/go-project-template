@@ -1,0 +1,27 @@
+name: Go - Test
+
+on:
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - "**.go"
+      - "**.mod"
+      - "**.sum"
+  push:
+    branches: ["*"]
+    paths:
+      - "**.go"
+      - "**.mod"
+      - "**.sum"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref_name }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  go-test:
+    uses: esacteksab/.github/.github/workflows/go-test-in-docker.yml@21bd7f88fef63b0a428dcbed6db9b5020c689682 # 0.3.2
