@@ -21,16 +21,17 @@ importers:
         specifier: ^0.19.0
         version: 0.19.0(prettier@3.5.3)
       prettier-plugin-sh:
-        specifier: ^0.17.0
-        version: 0.17.1(prettier@3.5.3)
+        specifier: ^0.17.2
+        version: 0.17.2(prettier@3.5.3)
       prettier-plugin-toml:
         specifier: ^2.0.4
         version: 2.0.4(prettier@3.5.3)
 
 packages:
 
-  '@reteps/dockerfmt@0.2.6':
-    resolution: {integrity: sha512-a3OYxLpIc6jbW1prbruEhRq9eYre9fKhcBD+boVwhri9L9ebdnKNy4LzaDa/tiu81P9phxA6Xi8r6jtV8I7Xsw==}
+  '@reteps/dockerfmt@0.3.4':
+    resolution: {integrity: sha512-IHIyUHVsASQmUheWTmIVxnMdOayvIa4e9XGyt1qpuz6l+dv89H8WXg/jV6PNMX9286O0m2wd3zvmNfgpp7IsCA==}
+    engines: {node: ^v12.20.0 || ^14.13.0 || >=16.0.0}
 
   '@taplo/core@0.2.0':
     resolution: {integrity: sha512-r8bl54Zj1In3QLkiW/ex694bVzpPJ9EhwqT9xkcUVODnVUGirdB1JTsmiIv0o1uwqZiwhi8xNnTOQBRQCpizrQ==}
@@ -122,8 +123,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.3
 
-  prettier-plugin-sh@0.17.1:
-    resolution: {integrity: sha512-jbrB7MRlmgtSRx2+I3McQGdFb98VUtJTkQ5DiK6oSJSfCy6vSBxSsuyDZ1xIx13TqREUHTsMzlNrZBZScuJJXQ==}
+  prettier-plugin-sh@0.17.2:
+    resolution: {integrity: sha512-7+dEo/IYbhrUj4qP+1QXj41/5Hv9ZkxBuEatI1jywrcAlVF1aGhdYJF4Sn+M67nkA16iRL53W4FSRe1bitTdmQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       prettier: ^3.0.3
@@ -152,7 +153,7 @@ packages:
 
 snapshots:
 
-  '@reteps/dockerfmt@0.2.6': {}
+  '@reteps/dockerfmt@0.3.4': {}
 
   '@taplo/core@0.2.0': {}
 
@@ -171,9 +172,9 @@ snapshots:
     dependencies:
       prettier: 3.5.3
 
-  prettier-plugin-sh@0.17.1(prettier@3.5.3):
+  prettier-plugin-sh@0.17.2(prettier@3.5.3):
     dependencies:
-      '@reteps/dockerfmt': 0.2.6
+      '@reteps/dockerfmt': 0.3.4
       prettier: 3.5.3
       sh-syntax: 0.5.6
 
