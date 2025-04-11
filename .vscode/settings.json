@@ -5,7 +5,8 @@
   "editor.formatOnSave": true,
   "go.formatTool": "gofumpt",
   "[go]": {
-    "editor.semanticHighlighting.enabled": true
+    "editor.semanticHighlighting.enabled": true,
+    "editor.defaultFormatter": "golang.go"
   },
   "gopls": {
     "formatting.gofumpt": true,
@@ -67,5 +68,11 @@
   ],
   "yaml.schemas": {
     "https://golangci-lint.run/jsonschema/golangci.v1.jsonschema.json": ".golangci.yaml"
+  },
+  "material-icon-theme.files.associations": {
+    "*.txtar": "Go_gopher"
+  },
+  "material-icon-theme.folders.associations": {
+    "testdata": "Test"
   }
 }

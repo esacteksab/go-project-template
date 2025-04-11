@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     groups:
-      minor-and-patch:
+      python-minor-and-patch:
         update-types:
           - "minor"
           - "patch"
@@ -16,7 +16,7 @@ updates:
   - package-ecosystem: "gomod"
     directory: "/"
     groups:
-      minor-and-patch:
+      go-minor-and-patch:
         update-types:
           - "minor"
           - "patch"
@@ -29,7 +29,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     groups:
-      minor-and-patch:
+      npm-minor-and-patch:
         update-types:
           - "minor"
           - "patch"
