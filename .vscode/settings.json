@@ -74,5 +74,8 @@
   },
   "material-icon-theme.folders.associations": {
     "testdata": "Test"
+  },
+  "files.associations": {
+    "go.tool.mod": "go.mod"
   }
 }

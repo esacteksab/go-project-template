@@ -46,3 +46,11 @@ updates:
       day: "saturday"
       time: "03:00"
       timezone: "America/Chicago"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "saturday"
+      time: "03:00"
+      timezone: "America/Chicago"
