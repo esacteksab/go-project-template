@@ -63,11 +63,13 @@
     },
     {
       "fileMatch": [".golangci.yaml"],
-      "url": "https://golangci-lint.run/jsonschema/golangci.v1.jsonschema.json"
+      "url": "https://golangci-lint.run/jsonschema/golangci.jsonschema.json"
     }
   ],
   "yaml.schemas": {
-    "https://golangci-lint.run/jsonschema/golangci.v1.jsonschema.json": ".golangci.yaml"
+    "https://golangci-lint.run/jsonschema/golangci.jsonschema.json": [
+      ".golangci.yaml"
+    ]
   },
   "material-icon-theme.files.associations": {
     "*.txtar": "Go_gopher"

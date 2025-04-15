@@ -4,4 +4,4 @@
 export TAG
 TAG="$(git describe --tags --abbrev=0)"
 # containerize that shit
-docker build -t esacteksab/tpt:"${TAG}" .
+docker build -t repository/image:"${TAG}" .
