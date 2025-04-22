@@ -71,13 +71,16 @@
       ".golangci.yaml"
     ]
   },
-  "material-icon-theme.files.associations": {
-    "*.txtar": "Go_gopher"
+    "material-icon-theme.files.associations": {
+    "*.txtar": "Go_gopher",
+    "go.tool.sum": "Go-mod",
+    "go.tool.mod": "Go-mod"
   },
   "material-icon-theme.folders.associations": {
     "testdata": "Test"
   },
   "files.associations": {
-    "go.tool.mod": "go.mod"
+    "go.tool.mod": "go.sum",
+    "go.tool.sum": "go.sum"
   }
 }
