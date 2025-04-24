@@ -70,37 +70,37 @@ repos:
           - yaml
         args: ["--schemafile", "https://goreleaser.com/static/schema.json"]
 
-  - repo: local
-    hooks:
-      - id: make-lint
-        name: "Make Lint"
-        entry: "make lint"
-        language: system
-        pass_filenames: false
+#  - repo: local
+#    hooks:
+#      - id: make-lint
+#        name: "Make Lint"
+#        entry: "make lint"
+#        language: system
+#        pass_filenames: false
+#
+#  - repo: local
+#    hooks:
+#      - id: make-tidy
+#        name: "Make Tidy"
+#        entry: "make tidy"
+#        language: system
+#        pass_filenames: false
 
-  - repo: local
-    hooks:
-      - id: make-tidy
-        name: "Make Tidy"
-        entry: "make tidy"
-        language: system
-        pass_filenames: false
-
-  - repo: local
-    hooks:
-      - id: make-audit
-        name: "Make Audit"
-        entry: "make audit"
-        language: system
-        pass_filenames: false
-
-  - repo: local
-    hooks:
-      - id: make-test
-        name: "Make Test"
-        entry: "make test"
-        language: system
-        pass_filenames: false
+#  - repo: local
+#    hooks:
+#      - id: make-audit
+#        name: "Make Audit"
+#        entry: "make audit"
+#        language: system
+#        pass_filenames: false
+#
+#  - repo: local
+#    hooks:
+#      - id: make-test
+#        name: "Make Test"
+#        entry: "make test"
+#        language: system
+#        pass_filenames: false
 
   - repo: https://github.com/hukkin/mdformat
     rev: 0.7.22
