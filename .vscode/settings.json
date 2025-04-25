@@ -1,4 +1,8 @@
 {
+  "telemetry.feedback.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "docker.lsp.telemetry": "off",
+  "rest-client.enableTelemetry": false,
   "editorconfig.generateAuto": false,
   "markdown.validate.enabled": true,
   "go.useLanguageServer": true,
