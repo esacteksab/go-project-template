@@ -97,7 +97,7 @@ hugo_stats.json
 .env.local
 .env.production.local
 .env.test.local
-.envrc*
+.envrc.*
 # Optional eslint cache
 .eslintcache
 # FuseBox cache
