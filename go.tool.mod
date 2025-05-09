@@ -1,7 +1,7 @@
 // How to use https://www.alexedwards.net/blog/how-to-manage-tool-dependencies-in-go-1.24-plus
 module example/foo/bar
 
-go 1.24.0
+go 1.24.3
 
 tool (
 	github.com/segmentio/golines
@@ -17,6 +17,7 @@ require (
 	github.com/dave/dst v0.27.3 // indirect
 	github.com/fatih/structtag v1.2.0 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
+	github.com/hpcloud/tail v1.0.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
@@ -34,6 +35,8 @@ require (
 	golang.org/x/tools v0.32.0 // indirect
 	golang.org/x/vuln v1.1.4 // indirect
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6 // indirect
+	gopkg.in/fsnotify.v1 v1.4.7 // indirect
+	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	honnef.co/go/tools v0.6.1 // indirect
 	mvdan.cc/gofumpt v0.8.0 // indirect
 )
