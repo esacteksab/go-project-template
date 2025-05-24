@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "npm": "^11.4.0",
+    "npm": "^11.4.1",
     "prettier": "^3.5.3",
     "prettier-plugin-go-template": "^0.0.15",
     "prettier-plugin-pkg": "^0.19.1",
