@@ -1,7 +1,7 @@
 // How to use https://www.alexedwards.net/blog/how-to-manage-tool-dependencies-in-go-1.24-plus
 module example/foo/bar
 
-go 1.24.3
+go 1.24.4
 
 tool (
 	github.com/segmentio/golines
@@ -25,14 +25,14 @@ require (
 	github.com/segmentio/golines v0.12.2 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/x-cray/logrus-prefixed-formatter v0.5.2 // indirect
-	golang.org/x/crypto v0.38.0 // indirect
-	golang.org/x/exp/typeparams v0.0.0-20250506013437-ce4c2cf36ca6 // indirect
-	golang.org/x/mod v0.24.0 // indirect
-	golang.org/x/sync v0.14.0 // indirect
+	golang.org/x/crypto v0.39.0 // indirect
+	golang.org/x/exp/typeparams v0.0.0-20250606033433-dcc06ee1d476 // indirect
+	golang.org/x/mod v0.25.0 // indirect
+	golang.org/x/sync v0.15.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
-	golang.org/x/telemetry v0.0.0-20250507143331-155ddd5254aa // indirect
+	golang.org/x/telemetry v0.0.0-20250606142133-60998feb31a8 // indirect
 	golang.org/x/term v0.32.0 // indirect
-	golang.org/x/tools v0.33.0 // indirect
+	golang.org/x/tools v0.34.0 // indirect
 	golang.org/x/vuln v1.1.4 // indirect
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6 // indirect
 	gopkg.in/fsnotify.v1 v1.4.7 // indirect

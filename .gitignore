@@ -27,6 +27,12 @@ _site/
 *.so
 # Test binary, built with `go test -c`
 *.test
+.current-tag
+actlock
+actlock.exe
+coverdata
+gh-actlock
+gh-actlock.exe
 # Go workspace file
 go.work
 go.work.sum
@@ -97,7 +103,7 @@ hugo_stats.json
 .env.local
 .env.production.local
 .env.test.local
-.envrc.*
+.envrc*
 # Optional eslint cache
 .eslintcache
 # FuseBox cache
