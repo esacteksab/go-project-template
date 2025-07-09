@@ -1,7 +1,7 @@
 // How to use https://www.alexedwards.net/blog/how-to-manage-tool-dependencies-in-go-1.24-plus
 module example/foo/bar
 
-go 1.24.4
+go 1.24.5
 
 tool (
 	github.com/segmentio/golines
