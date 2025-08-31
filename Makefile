@@ -55,6 +55,10 @@ install: build
 lint:
 	golangci-lint run -v
 
+.PHONY: modernize
+modernize:
+	go run golang.org/x/tools/gopls/internal/analysis/modernize/cmd/modernize@latest -fix -test ./...
+
 .PHONY: test
 test:
 	go test -covermode=atomic -coverprofile=coverdata/coverage.out ./... && echo 'Coverage data collected'

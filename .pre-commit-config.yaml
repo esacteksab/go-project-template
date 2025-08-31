@@ -76,6 +76,13 @@ repos:
           - yaml
         args: ["--schemafile", "https://goreleaser.com/static/schema.json"]
 
+  # - repo: local
+  #  hooks:
+  #    - id: make-modernize
+  #      name: "Make Modernize"
+  #      entry: "make modernize"
+  #      language: system
+  #      pass_filenames: false
   #  - repo: local
   #    hooks:
   #      - id: make-lint
