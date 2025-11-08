@@ -5,56 +5,52 @@ updates:
     directory: "/"
     groups:
       python-minor-and-patch:
-        dependency-type: "development"
         update-types:
           - "minor"
           - "patch"
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "19:00"
+      time: "17:00"
       timezone: "America/Chicago"
 
   - package-ecosystem: "gomod"
     directory: "/"
     groups:
       go-minor-and-patch:
-        dependency-type: "production"
         update-types:
           - "minor"
           - "patch"
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "19:00"
+      time: "17:00"
 
       timezone: "America/Chicago"
   - package-ecosystem: "npm"
     directory: "/"
     groups:
       npm-minor-and-patch:
-        dependency-type: "development"
         update-types:
           - "minor"
           - "patch"
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "19:00"
+      time: "17:00"
       timezone: "America/Chicago"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     groups:
       github-actions:
-        dependency-type: "development"
         update-types:
           - "minor"
           - "patch"
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "19:00"
+      time: "17:00"
       timezone: "America/Chicago"
 
   - package-ecosystem: "docker"
@@ -62,5 +58,5 @@ updates:
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "19:00"
+      time: "17:00"
       timezone: "America/Chicago"
