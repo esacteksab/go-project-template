@@ -19,6 +19,7 @@ updates:
     directory: "/"
     groups:
       go-minor-and-patch:
+        dependency-type: "production"
         update-types:
           - "minor"
           - "patch"
@@ -44,6 +45,12 @@ updates:
 
   - package-ecosystem: "github-actions"
     directory: "/"
+    groups:
+      github-actions:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
     schedule:
       interval: "weekly"
       day: "friday"
