@@ -4,41 +4,57 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     groups:
-      python-minor-and-patch:
+      minor-and-patch-py:
         update-types:
           - "minor"
           - "patch"
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "17:00"
+      time: "19:00"
       timezone: "America/Chicago"
+    labels:
+      - "dependencies"
+      - "dev"
+      - "python"
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: "gomod"
     directory: "/"
     groups:
-      go-minor-and-patch:
+      minor-and-patch-go:
         update-types:
           - "minor"
           - "patch"
     schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "17:00"
-
+      interval: "daily"
+      time: "19:00"
       timezone: "America/Chicago"
+    labels:
+      - "dependencies"
+      - "go"
+    cooldown:
+      default-days: 7
+
   - package-ecosystem: "npm"
     directory: "/"
     groups:
-      npm-minor-and-patch:
+      minor-and-patch-npm:
         update-types:
           - "minor"
           - "patch"
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "17:00"
+      time: "19:00"
       timezone: "America/Chicago"
+    labels:
+      - "dependencies"
+      - "dev"
+      - "javascript"
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -50,13 +66,28 @@ updates:
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "17:00"
+      time: "19:00"
       timezone: "America/Chicago"
+    labels:
+      - "dependencies"
+      - "dev"
+      - "github_actions"
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "weekly"
       day: "friday"
-      time: "17:00"
+      time: "19:00"
       timezone: "America/Chicago"
+    ignore:
+      - dependency-name: "esacteksab/go"
+        update-types: ["version-update:semver-minor"]
+    labels:
+      - "dependencies"
+      - "dev"
+      - "docker"
+    cooldown:
+      default-days: 7
