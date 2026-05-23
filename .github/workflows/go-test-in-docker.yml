@@ -24,4 +24,4 @@ permissions:
 
 jobs:
   go-test-docker:
-    uses: esacteksab/.github/.github/workflows/go-test-in-docker.yml@e2eea3a5d6e846dfc19ebbd3096a398b5de4cb67  # v0.80.26
+    uses: esacteksab/.github/.github/workflows/go-test-in-docker.yml@7b55a3567cc330186d4cc3bf635b73b7c95beb77  # v0.80.28
