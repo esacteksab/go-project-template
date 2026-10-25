@@ -21,8 +21,8 @@ importers:
         specifier: ^0.20.2
         version: 0.20.2(prettier@3.9.10)
       prettier-plugin-toml:
-        specifier: ^2.0.6
-        version: 2.0.6(prettier@3.9.10)
+        specifier: ^4.0.0
+        version: 4.0.0(prettier@3.9.10)
 
 packages:
 
@@ -51,11 +51,61 @@ packages:
     engines: {node: ^v12.20.0 || ^14.13.0 || >=16.0.0}
     hasBin: true
 
-  '@taplo/core@0.2.0':
-    resolution: {integrity: sha512-r8bl54Zj1In3QLkiW/ex694bVzpPJ9EhwqT9xkcUVODnVUGirdB1JTsmiIv0o1uwqZiwhi8xNnTOQBRQCpizrQ==}
+  '@tombi-toml/lib-darwin-arm64@1.8.6':
+    resolution: {integrity: sha512-JeWwgRdP+lVa+Uqn3wdLGW09wBfva+lczj0FG/xdKy2RJ3amZyACy8th2AdOduUE2mcgx9xcgVesVhVIYuialg==}
+    engines: {node: '>=20.0.0'}
+    cpu: [arm64]
+    os: [darwin]
 
-  '@taplo/lib@0.5.0':
-    resolution: {integrity: sha512-+xIqpQXJco3T+VGaTTwmhxLa51qpkQxCjRwezjFZgr+l21ExlywJFcDfTrNmL6lG6tqb0h8GyJKO3UPGPtSCWg==}
+  '@tombi-toml/lib-darwin-x64@1.8.6':
+    resolution: {integrity: sha512-DSJQHu/D8Ceydn/1Yq15jEr8qWcCBLPYjJyvr/ug6ZTd/jzbNTI30ovtZTBWjxXOes9ySKL26YmI2RoaJ3ZKUw==}
+    engines: {node: '>=20.0.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@tombi-toml/lib-linux-arm64-musl@1.8.6':
+    resolution: {integrity: sha512-4sYhM1XR3XRIkBzzAArGPbe3nL2+olCGe1Lyyn1gfoHh9yBmGNkibVYHd6p3a7TjzlOLe3pcZzO8yz3USrA4Pw==}
+    engines: {node: '>=20.0.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [musl]
+
+  '@tombi-toml/lib-linux-arm64@1.8.6':
+    resolution: {integrity: sha512-6K4TwV5/QqqBBLlVBSUIGXGlA7gXRRZhsTLhpVSgoO0+u8AfxDgM8gSIvTx519ta4qPW3w3hWsJ8pJ1ggkWLmA==}
+    engines: {node: '>=20.0.0'}
+    cpu: [arm64]
+    os: [linux]
+    libc: [glibc]
+
+  '@tombi-toml/lib-linux-x64-musl@1.8.6':
+    resolution: {integrity: sha512-22LmzfmKSSUk51Lw2M9Rk9nEkQJRRGsWqXPNQnpRn9IfL4Jk0e+kKxzKY+5A8DE8qLAXsElX72IAR2CXWJIX/A==}
+    engines: {node: '>=20.0.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [musl]
+
+  '@tombi-toml/lib-linux-x64@1.8.6':
+    resolution: {integrity: sha512-sRtbUan7+dZ78rBg/3Lbcp+wz6pi6KqefjbrOgesAv0il3pGl7nQPGbFxILVbcKABA+KOcSR3kaRaM2Y29Nk6Q==}
+    engines: {node: '>=20.0.0'}
+    cpu: [x64]
+    os: [linux]
+    libc: [glibc]
+
+  '@tombi-toml/lib-win32-arm64@1.8.6':
+    resolution: {integrity: sha512-noqzfCrj6IyD16bOc5hbRt7AKT49kY54gaRVQBQS6l7RChvpkJeOvpItv6PsQQ/XFUxPddG1f+rGz2jx6HcEUg==}
+    engines: {node: '>=20.0.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@tombi-toml/lib-win32-x64@1.8.6':
+    resolution: {integrity: sha512-ovlnN2CXQGeEDkrN7iw01NaCjuWYw4uTD7t9BoUssEvxlaiSBV/YhveX+eQgZxBL7aUzd+zkpYJbZpw0UFzACw==}
+    engines: {node: '>=20.0.0'}
+    cpu: [x64]
+    os: [win32]
+
+  '@tombi-toml/lib@1.8.6':
+    resolution: {integrity: sha512-YqpIyhTYQpaKlOlF4nPkIKg/9qvRIw1MX72lqQqCVIZJMdo2rwX4wus2RU8mnNoew7k738g8s10H7pXPzXqXoQ==}
+    engines: {node: '>=20.0.0'}
 
   prettier-plugin-go-template@0.0.15:
     resolution: {integrity: sha512-WqU92E1NokWYNZ9mLE6ijoRg6LtIGdLMePt2C7UBDjXeDH9okcRI3zRqtnWR4s5AloiqyvZ66jNBAa9tmRY5EQ==}
@@ -75,9 +125,9 @@ packages:
     peerDependencies:
       prettier: ^3.6.0
 
-  prettier-plugin-toml@2.0.6:
-    resolution: {integrity: sha512-12N/wBuHa9jd/KVy9pRP20NMKxQfQLMseQCt66lIbLaPLItvGUcSIryE1eZZMJ7loSws6Ig3M2Elc2EreNh76w==}
-    engines: {node: '>=16.0.0'}
+  prettier-plugin-toml@4.0.0:
+    resolution: {integrity: sha512-kx4a0gdNKH40/NOj/gSkiRKqXmOq8hXb6fNWW6Txd3T0fyq+Wq8ly0qtjNoGGiLUPhvS/3PIRVyVJpzHw6RNwA==}
+    engines: {node: '>=20.0.0'}
     peerDependencies:
       prettier: ^3.0.3
 
@@ -89,6 +139,10 @@ packages:
   sh-syntax@0.7.0:
     resolution: {integrity: sha512-sgMyAxpHiGgAaNg+gD3ad41vha24CzIjjghD4mdiON1lUafZPLJNYknyjcXmU4geilPstd69zCKkpccY0YvajA==}
     engines: {node: '>=16.0.0'}
+
+  smol-toml@1.9.1:
+    resolution: {integrity: sha512-j7WyPdf0CJoutMzMoPLF/bVXHtKZIT9Rb4eGeEbWw8X2t5oirjPgpL+OpaENZrILYaXqYwnVH+qgUwVbl+pUJQ==}
+    engines: {node: '>= 18'}
 
   ulid@2.4.0:
     resolution: {integrity: sha512-fIRiVTJNcSRmXKPZtGzFQv9WRrZ3M9eoptl/teFJvjOzmpU+/K/JH6HZ8deBfb5vMEpicJcLn7JmvdknlMq7Zg==}
@@ -115,11 +169,40 @@ snapshots:
       '@reteps/dockerfmt-linux-arm64': 0.5.4
       '@reteps/dockerfmt-linux-x64': 0.5.4
 
-  '@taplo/core@0.2.0': {}
+  '@tombi-toml/lib-darwin-arm64@1.8.6':
+    optional: true
 
-  '@taplo/lib@0.5.0':
-    dependencies:
-      '@taplo/core': 0.2.0
+  '@tombi-toml/lib-darwin-x64@1.8.6':
+    optional: true
+
+  '@tombi-toml/lib-linux-arm64-musl@1.8.6':
+    optional: true
+
+  '@tombi-toml/lib-linux-arm64@1.8.6':
+    optional: true
+
+  '@tombi-toml/lib-linux-x64-musl@1.8.6':
+    optional: true
+
+  '@tombi-toml/lib-linux-x64@1.8.6':
+    optional: true
+
+  '@tombi-toml/lib-win32-arm64@1.8.6':
+    optional: true
+
+  '@tombi-toml/lib-win32-x64@1.8.6':
+    optional: true
+
+  '@tombi-toml/lib@1.8.6':
+    optionalDependencies:
+      '@tombi-toml/lib-darwin-arm64': 1.8.6
+      '@tombi-toml/lib-darwin-x64': 1.8.6
+      '@tombi-toml/lib-linux-arm64': 1.8.6
+      '@tombi-toml/lib-linux-arm64-musl': 1.8.6
+      '@tombi-toml/lib-linux-x64': 1.8.6
+      '@tombi-toml/lib-linux-x64-musl': 1.8.6
+      '@tombi-toml/lib-win32-arm64': 1.8.6
+      '@tombi-toml/lib-win32-x64': 1.8.6
 
   prettier-plugin-go-template@0.0.15(prettier@3.9.10):
     dependencies:
@@ -136,13 +219,16 @@ snapshots:
       prettier: 3.9.10
       sh-syntax: 0.7.0
 
-  prettier-plugin-toml@2.0.6(prettier@3.9.10):
+  prettier-plugin-toml@4.0.0(prettier@3.9.10):
     dependencies:
-      '@taplo/lib': 0.5.0
+      '@tombi-toml/lib': 1.8.6
       prettier: 3.9.10
+      smol-toml: 1.9.1
 
   prettier@3.9.10: {}
 
   sh-syntax@0.7.0: {}
+
+  smol-toml@1.9.1: {}
 
   ulid@2.4.0: {}
